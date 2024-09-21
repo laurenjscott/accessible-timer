@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome To myTimer</h1>
+    <form class="show-element">
+      <label for="minutes-input">Enter integer from 1 to 5: </label>
+      <input
+        name="minutes-input"
+        id="minutes-input"
+        pattern="^[1-5]$"
+        required
+      />
+      <button class="btn-start" type="submit">Start</button>
+    </form>
+    <div class="container-countdown-timer">
+      <p class="start-timer-announcement sr-only" aria-live="polite"></p>
+      <p class="string-countdown" aria-live="polite" role="timer">
+        <span class="minutes">00</span>:<span class="seconds">00</span>
+      </p>
+      <p class="string-timer-caption"></p>
+    </div>
 
+    <button class="btn-restart" type="button">Restart</button>
+  </body>
+</html>

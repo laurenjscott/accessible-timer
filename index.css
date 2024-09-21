@@ -1,1 +1,143 @@
+/* Global Styles */
 
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+
+
+/* Element selectors */
+
+body {
+  background: linear-gradient(#e66465, #9198e5);
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lobster Two", serif;
+  font-size: 2.5rem;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  margin-top: 1rem;
+  text-align: center;
+  text-align-last: center; /* Both Chrome  and Safari ignore "text-align" in select elements. This fixes the issue in Chrome, but not in Safari :( */
+  width: 150px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #707070;
+  -webkit-appearance: none; /* remove default style in Safari and Chrome so that padding can be applied */
+  background-color: #FFF; /* mostly for Safari but for Chrome too */
+}
+
+
+label {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+  width: 30vw;
+  min-width: 200px;
+  max-width: 600px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1.75rem;
+  font-family: inherit;
+  font-weight: 700;
+  
+}
+
+/* Pseudos */
+
+select:focus {
+  outline: none;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(70, 70, 70, 0.5);
+  font-size: 0.9rem;
+}
+
+
+/* Class selectors */
+
+.container-countdown-timer {
+  opacity: 0;
+  text-align: center;
+}
+
+.btn-restart {
+  margin-top: 1rem;
+  border: 0;
+  opacity: 0;
+  background-color: #FFF; /* for Safari and Safari for iOS (roll eyes) */
+}
+
+
+.string-countdown, .string-countdown span {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.string-timer-caption {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.btn-start {
+  background: #dd6971;
+  margin-top: 2rem;
+  border: 1px solid #000;
+}
+
+
+.show-element { /*used to visually hide ARIA live regions but not remove it from the layout or the accessibility API. */
+  opacity: 1;
+}
+
+.no-display {
+  display: none;
+}
+
+.sr-only { /* applied to text that should only be read by screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
