@@ -50,7 +50,6 @@ input {
   text-align-last: center; /* Both Chrome  and Safari ignore "text-align" in select elements. This fixes the issue in Chrome, but not in Safari :( */
   width: 150px;
   font-size: 1.4rem;
-  font-weight: 300;
   color: #707070;
   -webkit-appearance: none; /* remove default style in Safari and Chrome so that padding can be applied */
   background-color: #FFF; /* mostly for Safari but for Chrome too */
@@ -71,7 +70,6 @@ button {
   padding: 0.5rem;
   font-size: 1.75rem;
   font-family: inherit;
-  font-weight: 700;
   
 }
 
@@ -105,7 +103,6 @@ select:focus {
 
 .string-countdown, .string-countdown span {
   font-size: 5rem;
-  font-weight: 800;
   margin-bottom: 0;
   margin-top: auto;
 }
